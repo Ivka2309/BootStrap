@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Your Bootstrap Responsive Site</title>
+  <style>
+    #header {
+        font-style: Arial;
+        color: rgb(116, 106, 94);
+    }
+    #links { 
+        color: inherit;
+        text-decoration: none;
+        top: 15px;
+        font-size: small;
+        
+
+    }
+    a {
+        margin-right: 20px;
+        color: inherit;
+    }
+    a:hover{
+        text-decoration: none;
+        color: inherit;
+        color: black;
+        font-size:15px ;
+
+    }
+    /*..........................*/
+
+    
+    .display-4{
+        font-size: 18px;
+        margin-left: 10px;
+        background-color: rgb(34, 216, 223);}
+        
+        #hero {
+  overflow: hidden;
+  height: 380px;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  z-index: -1;
+}
+
+.display-4 {
+  position: relative;
+  z-index: 1;
+}
+
+    
+
+  #contact {
+    background-color: #333; 
+    color: #fff; 
+    padding: 60px 0; 
+  }
+
+  #contact h3 {
+    text-align: center;
+    color: #ffc107; 
+  }
+
+  #contact p, #contact ul {
+    text-align: center;
+  }
+
+  #contact ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #contact li {
+    color: #a0a0a0; 
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  .navbar-toggler{
+    margin-left: 100px;
+  }
+
+
+
+    
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <section id="header" class="py-3">
+    <div class="container">
+      <div class="row flex-nowrap justify-content-between">
+        <div class="col-md-4 d-flex align-items-center">
+          <h1>My website</h1>
+        </div>
+        <div class="col-md-8 text-right">
+          
+          <div class="d-none d-md-block">
+            <a href="#">Home</a> 
+            <a href="#">Portfolio</a> 
+            <a href="#">Staff</a> 
+            <a href="#">Features</a> 
+            <a href="#">Blog</a> 
+            <a href="#">Contact</a> 
+            <a href="#">Download</a>
+          </div>
+         
+          <button class="navbar-toggler d-md-none d-flex align-items-center justify-content-center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="imgs/menu.png" class="img-fluid">
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Staff</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Download</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+<section id="hero" class="position-relative">
+  <div class="hero-background" style="background-image: url('imgs/hero.jpg'); height: 380px; background-size: cover; background-position: center;"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="p-5">
+          <h2 class="display-4 text-light">We strive to make all of our creations exquisite.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="staff" class="bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 text-center">
+        <img src="imgs/icon-1.png" alt="icon 1" class="img-fluid">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="col-lg-3 text-center">
+        <img src="imgs/icon-2.png" alt="icon 2" class="img-fluid">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="col-lg-3 text-center">
+        <img src="imgs/icon-3.png" alt="icon 3" class="img-fluid">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="col-lg-3 text-center">
+        <img src="imgs/icon-4.png" alt="icon 4" class="img-fluid">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="recent-work" class="py-5">
+  <div class="container">
+    <h2 class="text-left">Recent Work</h2>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-12">
+        <img src="imgs/bike-400x340.jpg" alt="Recent Work 1" class="img-fluid">
+        <p>Little cow</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <img src="imgs/surf-400x340.jpg" alt="Recent Work 2" class="img-fluid">
+        <p>I like surfing</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <img src="imgs/hills-400x340.jpg" alt="Recent Work 3" class="img-fluid">
+        <p>I like hiking</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <img src="imgs/path-400x340.jpg" alt="Recent Work 4" class="img-fluid">
+        <p>I like woods</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="from-the-blog" class="py-5">
+  <div class="container">
+    <h2 class="text-left">From the Blog</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="imgs/cow-640x340.jpg" alt="Blog Image 1" class="img-fluid">
+        <p>Cow on the hill</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="imgs/sunrise-640x340.jpg" alt="Blog Image 2" class="img-fluid">
+        <p>Beautiful sunrise</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="imgs/grass-640x340.jpg" alt="Blog Image 3" class="img-fluid">
+        <p>I love green</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="py-5">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-4">
+        <h3>Naslov 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget sapien nec magna rhoncus dignissim. Cras lobortis, massa faucibus mattis ullamcorper, ante lorem ornare urna, ac tempor erat erat sit amet nulla.</p>
+      </div>
+      <div class="col-lg-4">
+        <h3>Naslov 2</h3>
+        <ul>
+          <li>Podatak 1</li>
+          <li>Podatak 2</li>
+          <li>Podatak 3</li>
+          <li>Podatak 4</li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h3>Naslov 3</h3>
+        <ul>
+          <li>Podatak 1</li>
+          <li>Podatak 2</li>
+          <li>Podatak 3</li>
+          <li>Podatak 4</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-dark text-light text-center py-3">
+  &copy; 2023
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
